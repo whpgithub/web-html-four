@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>web前端第四次作业-信息统计表</title>
+		<style>
+			.information{
+				width: 500px;
+				text-align: center;
+				background-color:skyblue;
+				color: red;
+			}
+			table{
+				border:2px solid skyblue;
+				width: 500px;
+				background-color: pink;
+			}
+			table tr td{
+				border: 1px solid white;
+			}
+			.tdright{
+				text-align: right;
+			}
+			textarea{
+				width: 100px;
+				height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<div class="information">信息统计表</div>
+			<div>
+				<table>
+					<tr>
+						<td class="tdright">姓名:</td>
+						<td><input type="text"/></td>
+					</tr>
+					<tr>
+						<td class="tdright">年龄:</td>
+						<td><input type="text"/></td>
+					</tr>
+					<tr>
+						<td class="tdright">性别:</td>
+						<td>
+							<input type="radio" name="sex" value="男" checked="checked"/>男
+							<input type="radio" name="sex" value="女"/>女
+						</td>
+					</tr>
+					<tr>
+						<td class="tdright">爱好:</td>
+						<td class="hobbylist">
+							<input type="checkbox" name="hobby"/>旅游<br/>
+							<input type="checkbox" name="hobby"/>登山<br/>
+							<input type="checkbox" name="hobby"/>健身<br/>
+							<input type="checkbox" name="hobby"/>上网<br/>
+							<input type="checkbox" name="hobby"/>游泳
+						</td>
+					</tr>
+					<tr>
+						<td class="tdright">学历:</td>
+						<td>
+							<select>
+								<option>--请选择--</option>
+								<option>小学</option>
+								<option>初中</option>
+								<option>高中</option>
+								<option>大专</option>
+								<option>本科及以上</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="tdright">自我介绍:</td>
+						<td>
+							<textarea placeholder="自我简介"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit"/>
+							<input type="reset"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>
